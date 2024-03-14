@@ -7,7 +7,7 @@ const frameMetadata = getFrameMetadata({
       label: "ok so"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}//ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg.jpg/`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg.jpg/`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
