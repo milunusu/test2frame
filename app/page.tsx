@@ -7,7 +7,7 @@ const frameMetadata = getFrameMetadata({
       label: "ok so"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg/usami1.jpg`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/https://maroon-able-dolphin-503.mypinata.cloud/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg/USAMI%201.jpeg`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'trying my best',
     description: 'A frame of a rabbit representing me',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg/usami2.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}https://maroon-able-dolphin-503.mypinata.cloud/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg/USAMI%201.jpeg`],
   },
   other: {
     ...frameMetadata,
