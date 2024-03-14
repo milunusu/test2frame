@@ -11,7 +11,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame 2</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/https://maroon-able-dolphin-503.mypinata.cloud/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg/USAMI%201.jpeg" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmW9hoQXMaqs9U29dWiZWujPmq1NkPkinqr6xruTjg8tMw.jpg" />
     <meta property="fc:frame:button:1" content="ok so" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end" />
   </head></html>`);
@@ -19,7 +19,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="idk" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/https://maroon-able-dolphin-503.mypinata.cloud/ipfs/QmNe1AtsZ3nPDXyj8i989d5cpU2cUHwp4F9dCD5v1jE5wg/USAMI%201.jpeg" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmPRmhLgJUETG2SDDrNDSiaiztDPF2EWYsbkGFmEzytxq7/${id}.jpg" />
     <meta property="fc:frame:button:1" content="alrighttt ok" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
   </head></html>`);
