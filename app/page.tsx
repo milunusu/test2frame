@@ -7,7 +7,7 @@ const frameMetadata = getFrameMetadata({
       label: "ok so"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z/0.jpeg/`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z%0.jpg/`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'trying my best',
     description: 'A frame of a rabbit representing me',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z/0.jpeg/`],
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z%0.jpg/`],
   },
   other: {
     ...frameMetadata,
