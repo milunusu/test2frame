@@ -9,7 +9,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   if(idAsNumber === 1){
       return new NextResponse(`<!DOCTYPE html><html><head>
-    <title>This is frame 2</title>
+    <title>frame</title>
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z%1.jpg" />
     <meta property"fc:frame:image:aspect_ratio" content="1.91:1" />
