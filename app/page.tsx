@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   const searchParams = req.nextUrl.searchParams;
   const id = searchParams.get("id");
-  const idAsNumber = parseInt(id || '1'); // Default to 1 if id is not provided or invalid
+  const idAsNumber = parseInt(id || '1');
 
   const nextId = idAsNumber + 1;
 
@@ -12,9 +12,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   let imageUrl;
   if (idAsNumber === 1) {
-    imageUrl = `${gatewayUrl}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z1.jpg`;
+    imageUrl = `${gatewayUrl}/ipfs/QmTqP6Ajtshe4xHe42NzSMSfjtUNhyxAdGoa2jLWcGpe8Z%1.jpg`;
   } else {
-    imageUrl = `${gatewayUrl}/ipfs/QmPRmhLgJUETG2SDDrNDSiaiztDPF2EWYsbkGFmEzytxq7${id}.jpg`;
+    imageUrl = `${gatewayUrl}/ipfs/QmPRmhLgJUETG2SDDrNDSiaiztDPF2EWYsbkGFmEzytxq7%${id}.jpg`;
   }
 
   return new NextResponse(`<!DOCTYPE html><html><head>
