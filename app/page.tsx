@@ -7,8 +7,8 @@ const frameMetadata = getFrameMetadata({
       label: "frame 1"
     }
   ],
-  image: `https://indigo-advisory-gorilla-502.mypinata.cloud/ipfs/QmQGN79J7rwX2NmZdEnyX6ViGWAiSJ6irMCyxFQmC4H2VL/0.jpg`,
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=0`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmQGN79J7rwX2NmZdEnyX6ViGWAiSJ6irMCyxFQmC4H2VL/0.jpg`,
+  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=2`,
 });
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'conie',
     description: 'please',
-    images: [`https://indigo-advisory-gorilla-502.mypinata.cloud/ipfs/QmQGN79J7rwX2NmZdEnyX6ViGWAiSJ6irMCyxFQmC4H2VL/1.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/1.jpg`],
   },
   other: {
     ...frameMetadata,
